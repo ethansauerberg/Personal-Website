@@ -1,0 +1,11 @@
+.scriptName {
+  width: 50%;
+  max-width: 600px;
+  min-width: 200px;
+  display: block;
+  margin: 0px auto 20px;
+}
+
+.scriptName:hover {
+  cursor: pointer;
+}

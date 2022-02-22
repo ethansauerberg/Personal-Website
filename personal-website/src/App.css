@@ -1,0 +1,27 @@
+#background {
+  background-color: #5D04A3;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  position: absolute;
+}
+#main {
+  background:
+    linear-gradient(to bottom right,#E03030 0%, #5D04A3 50%) bottom right,
+    linear-gradient(to bottom left, #E03030 0%, #5D04A3 50%) bottom left,
+    linear-gradient(to top left,#E03030 0%, #5D04A3 50%) top left,
+    linear-gradient(to top right,#E03030 0%, #5D04A3 50%) top right;
+  background-size:50% 50%;
+  background-repeat:no-repeat;
+  left: 5vw;
+  top: 5vh;
+  width: 90vw;
+  height: 90vh;
+  position: fixed;
+  text-align: center;
+  color: #FBFEFB;
+}
+
+.App {
+  text-align: center;
+}
