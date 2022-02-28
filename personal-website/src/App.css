@@ -1,27 +1,50 @@
-#background {
+.background {
   background-color: #5D04A3;
   height: 100vh;
   width: 100vw;
   z-index: 0;
   position: absolute;
 }
-#main {
+.main {
   background:
-    linear-gradient(to bottom right,#E03030 0%, #5D04A3 50%) bottom right,
-    linear-gradient(to bottom left, #E03030 0%, #5D04A3 50%) bottom left,
-    linear-gradient(to top left,#E03030 0%, #5D04A3 50%) top left,
-    linear-gradient(to top right,#E03030 0%, #5D04A3 50%) top right;
-  background-size:50% 50%;
+    linear-gradient(to bottom right, #E03030 0%, #5D04A3 40%) bottom right,
+    linear-gradient(to bottom left, #E03030 0%, #5D04A3 40%) bottom left,
+    linear-gradient(to top left, #E03030 0%, #5D04A3 40%) top left,
+    linear-gradient(to top right, #E03030 0%, #5D04A3 40%) top right;
+  background-size:50.1% 50.1%;
   background-repeat:no-repeat;
-  left: 5vw;
-  top: 5vh;
-  width: 90vw;
+  width: 100vw;
   height: 90vh;
+  overflow-y: scroll;
   position: fixed;
   text-align: center;
   color: #FBFEFB;
 }
+.bigLinkSpacer {
+  width: 70%;
+  margin: auto;
+}
 
 .App {
   text-align: center;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@media (max-width: 600px) {
+  .bigLinkSpacer {
+    width: 100%;
+    margin: auto;
+  }
+  .main{
+    height: 90vh;
+  }
 }

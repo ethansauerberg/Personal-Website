@@ -1,9 +1,14 @@
 .headshot {
-  width: 40%;
-  max-width: 350px;
-  min-width: 200px;
+  height: 25%;
   display: block;
-  margin: 0px auto 20px;
+  margin: 10px auto;
   border-radius: 25px;
   border: 4px solid #e5e5e5;
+}
+
+@media (max-width: 600px) {
+  .headshot {
+    width: 75%;
+    height: auto;
+  }
 }

@@ -1,0 +1,13 @@
+.about-me-p{
+  font-size: 20px;
+  margin: 20px auto;
+  width: 40%;
+}
+
+@media (max-width: 600px) {
+  .about-me-p {
+    font-size: 18px;
+    margin: 10px auto;
+    width: 80%;
+  }
+}
