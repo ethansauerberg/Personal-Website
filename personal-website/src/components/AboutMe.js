@@ -1,9 +1,7 @@
-import React, { Component } from "react/cjs/react.production.min";
 import "./AboutMe.css"
 
-class AboutMe extends Component{
-    render() {
-        return (
+const AboutMe = () => {
+    return (
         <p className="about-me-p">
             full stack developer {"&"} software engineer<br></br>
             environmentalist<br></br><br></br>
@@ -16,7 +14,7 @@ class AboutMe extends Component{
             asdf
         </p>
         )
-    }
+
 }
 
 export default AboutMe;

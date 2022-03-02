@@ -28,6 +28,7 @@
 .logoImg {
   width: 30px;
   margin: 10px 10px;
+  border-radius: 8px;
 }
 .logoImg:hover {
   cursor: pointer;

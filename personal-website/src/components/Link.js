@@ -1,10 +1,17 @@
-import React, { Component } from "react/cjs/react.production.min";
 import "./Link.css"
+import PropTypes from 'prop-types'
 
-class LinkComponent extends Component{
-    render() {
-        return <a className={`${this.props.linkSize} link`}>{this.props.linkText}</a>
-    }
+const Link = ({onclick, linkSize, linkText}) => {
+    return (
+        <span onClick={onclick} className={linkSize + " link"}>
+            {linkText}
+        </span>
+    )
+}
+Link.propTypes = {
+    onclick: PropTypes.func.isRequired, 
+    linkSize: PropTypes.string.isRequired,
+    linkText: PropTypes.string.isRequired
 }
 
-export default LinkComponent;
+export default Link
