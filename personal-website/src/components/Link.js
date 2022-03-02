@@ -1,15 +1,18 @@
 import "./Link.css"
 import PropTypes from 'prop-types'
+import { Link as RouterLink} from 'react-router-dom'
 
-const Link = ({onclick, linkSize, linkText}) => {
+const Link = ({to, linkSize, linkText}) => {
     return (
-        <span onClick={onclick} className={linkSize + " link"}>
+        <RouterLink
+            to={to} 
+            className={linkSize + " link"}>
             {linkText}
-        </span>
+        </RouterLink>
     )
 }
 Link.propTypes = {
-    onclick: PropTypes.func.isRequired, 
+    to: PropTypes.string.isRequired, 
     linkSize: PropTypes.string.isRequired,
     linkText: PropTypes.string.isRequired
 }

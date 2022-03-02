@@ -36,17 +36,20 @@
   transition-duration: 0.25s;
 }
 
+.footerLinkFlexbox {
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
 @media (max-width: 600px) {
   .footer {
     padding-top: 20px;
-    top: 88%;
     left: 0%;
-    height: 12%;
   }
 
   .logoImg {
     width: 30px;
-    margin: 5px 8% 0px;
+    margin: 0px 8% 5px;
   }
   .footerMobile {
     display: block;

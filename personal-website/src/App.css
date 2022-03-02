@@ -18,7 +18,7 @@
   overflow-y: scroll;
   position: fixed;
   text-align: center;
-  color: #FBFEFB;
+  color: #E5E5E5;
 }
 .bigLinkSpacer {
   width: 70%;
@@ -45,6 +45,6 @@
     margin: auto;
   }
   .main{
-    height: 90vh;
+    height: 85vh;
   }
 }

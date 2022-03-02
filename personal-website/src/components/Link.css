@@ -3,6 +3,9 @@
   display: inline-block;
   vertical-align: middle;
 }
+a {
+  color: #E5E5E5;
+}
 .big {
   font-size: 28px;
   margin: 10px 15px;
@@ -22,14 +25,13 @@
 
 @media (max-width: 600px) {
   .big {
-    font-size: 24px;
+    font-size: 18px;
     margin: 20px 10px;
     max-width: 40%;
   }
   .small {
     font-size: 12px;
     max-width: 23%;
-    width: auto;
     margin: 2px;
   }
 }
