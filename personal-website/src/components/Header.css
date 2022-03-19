@@ -1,0 +1,16 @@
+.headerFlexbox{
+  height: 15vh;
+  color: #FBFEFB;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: center;
+}
+.headerFlexboxItem {
+  align-self: center;
+}
+
+@media (max-width: 600px) {
+  
+}

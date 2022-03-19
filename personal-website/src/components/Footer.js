@@ -1,8 +1,5 @@
 import "./Footer.css"
-
-import PropTypes from 'prop-types'
 import Link from './Link.js'
-
 import githubLogo from '../assets/githubLogo.png'
 import linkedInLogo from '../assets/linkedInLogo.jpg'
 import instagramLogo from '../assets/instagramLogo.jpg'

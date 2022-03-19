@@ -6,6 +6,8 @@ import ScriptName from './components/ScriptName.js'
 import Headshot from './components/Headshot.js'
 import AboutMe from './components/AboutMe.js';
 import Footer from './components/Footer.js';
+import Header from './components/Header.js';
+import Tldr from './components/Tldr';
 import React from 'react';
 // import { useState } from 'react'
 // import PropTypes from 'prop-types'
@@ -14,16 +16,8 @@ import constants from './constants';
 const Home = () => {
   return (
     <div>
-      <div className="bigLinkSpacer">
-        <Link 
-          linkSize={constants.bigLink} 
-          linkText="Projects" 
-          to={constants.projects}/>
-        <Link 
-          linkSize={constants.bigLink} 
-          linkText="Resume for Humans" 
-          to={constants.resumeForHumans}/>
-      </div>  
+      <Header link1Text="Projects" link1To={constants.projects} link2Text="Resume For Humans" link2To={constants.resumeForHumans} />
+      <Headshot/>
       <AboutMe/>
     </div>
   )
@@ -31,37 +25,18 @@ const Home = () => {
 
 const Projects = () => {
   return (
-    <div>
-      <div className="bigLinkSpacer">
-        <Link 
-          linkSize={constants.bigLink} 
-          linkText="Home" 
-          to={constants.home}/>
-        <Link 
-          linkSize={constants.bigLink} 
-          linkText="Resume for Humans" 
-          to={constants.resumeForHumans}/>
-      </div>   
-    </div>
+    <>
+      <Header link1Text="Home" link1To={constants.home} link2Text="Resume For Humans" link2To={constants.resumeForHumans} />
+    </>
   )
 }
 
 const ResumeForHumans = () => {
   return (
-    <div>
-      <div className="bigLinkSpacer">
-        <Link 
-          linkSize={constants.bigLink} 
-          linkText="Home" 
-          to={constants.home}
-        />
-        <Link 
-          linkSize={constants.bigLink} 
-          linkText="Projects" 
-          to={constants.projects}
-        />
-      </div>
-    </div>
+    <>
+      <Header link1Text="Home" link1To={constants.home} link2Text="Projects" link2To={constants.projects} />
+      <Tldr/>
+    </>
   )
 }
 
@@ -70,8 +45,7 @@ function App() {
     <Router>
       <div className='background'></div>
       <div className='main'>
-        <ScriptName/>
-        <Headshot/>
+        {/* <ScriptName/> */}
         <Routes>
           <Route path="/" exact element={Home()}></Route>
           <Route path={constants.projects} exact element={Projects()}></Route>

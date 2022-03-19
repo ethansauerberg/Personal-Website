@@ -13,7 +13,7 @@ const Link = ({to, linkSize, linkText}) => {
 }
 Link.propTypes = {
     to: PropTypes.string.isRequired, 
-    linkSize: PropTypes.string.isRequired,
+    linkSize: PropTypes.string,
     linkText: PropTypes.string.isRequired
 }
 

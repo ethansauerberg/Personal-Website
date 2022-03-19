@@ -1,7 +1,6 @@
 .link {
   text-decoration: underline;
   display: inline-block;
-  vertical-align: middle;
 }
 a {
   color: #E5E5E5;
@@ -11,16 +10,22 @@ a {
   margin: 10px 15px;
   width: 200px;
   max-width: 30%;
+  vertical-align: middle;
 }
 .small {
-  font-size: 18px;
+  font-size: 20px;
   margin: 5px 15px;
-  width: 100px;
+  width: 150px;
 }
-.link:hover {
+.big:hover {
   transform: scale(1.15);
-  transition-duration: 0.25s;
+  transition-duration: 0.2s;
   cursor: pointer;
+}
+@media (max-width: 800px) {
+  .small {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 600px) {

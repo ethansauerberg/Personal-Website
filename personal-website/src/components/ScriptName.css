@@ -1,19 +1,24 @@
 .scriptName {
-  height: 10%;
   display: block;
-  margin: 30px auto 20px;
+  height: 60%;
+  /* margin: 30px auto 20px; */
+  align-self: center;
+
 }
 
-.scriptName:hover {
+/* .scriptName:hover {
   cursor: pointer;
   transform: scale(1.15);
   transition-duration: 0.25s;
-}
-
+} */
 
 @media (max-width: 600px) {
   .scriptName {
-    width: 75%;
-    height: auto;
+    height: 45%;
+  }
+}
+@media (max-width: 400px) {
+  .scriptName {
+    height: 30%;
   }
 }

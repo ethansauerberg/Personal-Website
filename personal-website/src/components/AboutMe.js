@@ -2,17 +2,17 @@ import "./AboutMe.css"
 
 const AboutMe = () => {
     return (
-        <p className="about-me-p">
-            full stack developer {"&"} software engineer<br></br>
-            environmentalist<br></br><br></br>
-            I love solving complex problems and learning new things<br></br><br></br>
-            If you found your way here, I probably applied for a job at your company.
-            Please check out my resume and projects above :)
-             <br></br>
-            sadf<br></br>
-            asdf<br></br>
-            asdf
-        </p>
+        <>
+            <h2>Who am I?</h2>
+            <p className="normal-text">
+                <ul>
+                    <li>Full stack developer, software engineer, and environmentalist</li>
+                    <li>Lover of solving complex problems and learning new skills</li>
+                    <li>Basketball, rock climbing, and running fan</li>
+                    <li>Occasional diet coke addict</li>
+                </ul>
+            </p>
+        </>
         )
 
 }

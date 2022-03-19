@@ -4,7 +4,9 @@ import './ScriptName.css';
 
 class LinkComponent extends Component{
     render() {
-        return <img className="scriptName" src={name} alt="Ethan Sauerberg"/>
+        return <>
+            <img className="scriptName" src={name} alt="Ethan Sauerberg"/>
+        </>
     }
 }
 
