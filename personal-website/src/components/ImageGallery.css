@@ -1,0 +1,24 @@
+.imageGalleryGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.imageGalleryGrid > div {
+    padding: 20px;
+}
+.imageGalleryGridWrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.imageGalleryImage {
+    width: 100%;
+    border-radius: 25px;
+    border: 4px solid #e5e5e5;
+}
+
+.imageGalleryCaption {
+    font-size: 18px;
+    margin: 20px auto;
+    width: 90%;
+
+}

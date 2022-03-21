@@ -8,6 +8,7 @@ import AboutMe from './components/AboutMe.js';
 import Footer from './components/Footer.js';
 import Header from './components/Header.js';
 import Tldr from './components/Tldr';
+import ProjectGallery from './components/ProjectGallery';
 import React from 'react';
 // import { useState } from 'react'
 // import PropTypes from 'prop-types'
@@ -27,6 +28,7 @@ const Projects = () => {
   return (
     <>
       <Header link1Text="Home" link1To={constants.home} link2Text="Resume For Humans" link2To={constants.resumeForHumans} />
+      <ProjectGallery/>
     </>
   )
 }
